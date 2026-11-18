@@ -143,8 +143,7 @@ button {
 
 .left-arm {
     left: 10px;
-    animation: leftArmWalk 0.5s infinite alternate;
-}
+    animation: none;
 
 .right-arm {
     right: 10px;

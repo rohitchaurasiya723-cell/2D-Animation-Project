@@ -201,3 +201,9 @@ button {
         left: 90%;
     }
 }
+/* Make character move across the screen */
+.character {
+    animation:
+        bob 2s infinite ease-in-out,
+        moveCharacter 5s linear infinite alternate;
+}

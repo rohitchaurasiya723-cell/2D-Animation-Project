@@ -144,6 +144,7 @@ button {
 .left-arm {
     left: 10px;
     animation: none;
+}
 
 .right-arm {
     right: 10px;
@@ -379,4 +380,17 @@ button {
 .tree-two {
     right: 120px;
     transform: scale(0.8);
+}
+/* Fix character visibility */
+
+.ground {
+    z-index: 0;
+}
+
+.character {
+    z-index: 1;
+}
+
+.speech {
+    z-index: 2;
 }

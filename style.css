@@ -282,7 +282,7 @@ button {
 .speech.show {
     display: block;
 }
-.right-arm.wave {
+.left-arm.wave {
     animation: waveHand 0.5s ease-in-out 3 alternate !important;
     transform-origin: top center;
 }

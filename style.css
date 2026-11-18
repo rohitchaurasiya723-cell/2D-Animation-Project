@@ -350,3 +350,33 @@ button {
         transform: translateX(750px);
     }
 }
+/* Cartoon Trees */
+
+.tree {
+    position: absolute;
+    bottom: 65px;
+    width: 25px;
+    height: 65px;
+    background: #8b4513;
+    border-radius: 8px;
+}
+
+.tree::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #228b22;
+    border-radius: 50%;
+    bottom: 40px;
+    left: -25px;
+}
+
+.tree-one {
+    left: 120px;
+}
+
+.tree-two {
+    right: 120px;
+    transform: scale(0.8);
+}

@@ -30,7 +30,7 @@ talkBtn.addEventListener("click", () => {
     const message = speech.textContent;
 
     const voice = new SpeechSynthesisUtterance(message);
-    voice.lang = "hi-IN";
+    voice.lang = "en-US";
     voice.rate = 0.9;
 
     window.speechSynthesis.cancel();

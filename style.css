@@ -214,19 +214,29 @@ button {
         bob 2s infinite ease-in-out,
         moveCharacter 5s linear infinite alternate;
 }
-/* Eye blinking animation */
+/* Clear eye blinking effect */
 
 .eyes span {
-    animation: blink 2s infinite;
-    transform-origin: center;
+    display: block;
+    width: 7px;
+    height: 9px;
+    background: #222;
+    border-radius: 50%;
+    animation: eyeBlink 3s infinite;
 }
 
-@keyframes blink {
-    0%, 40%, 60%, 100% {
+.eyes span:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+@keyframes eyeBlink {
+    0%, 85%, 100% {
+        height: 9px;
         transform: scaleY(1);
     }
 
-    45%, 55% {
-        transform: scaleY(0.08);
+    90%, 94% {
+        height: 1px;
+        transform: scaleY(0.1);
     }
 }

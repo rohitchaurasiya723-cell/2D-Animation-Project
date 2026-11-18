@@ -193,3 +193,11 @@ button {
     from { transform: rotate(20deg); }
     to { transform: rotate(-20deg); }
 } 
+@keyframes moveCharacter {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 90%;
+    }
+}

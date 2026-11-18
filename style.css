@@ -129,3 +129,67 @@ button {
     color: white;
     font-size: 16px;
 }
+/* Cartoon arms */
+.arm {
+    position: absolute;
+    top: 82px;
+    width: 13px;
+    height: 60px;
+    background: #ffcc99;
+    border: 3px solid #333;
+    border-radius: 12px;
+    transform-origin: top center;
+}
+
+.left-arm {
+    left: 10px;
+    animation: leftArmWalk 0.5s infinite alternate;
+}
+
+.right-arm {
+    right: 10px;
+    animation: rightArmWalk 0.5s infinite alternate;
+}
+
+/* Cartoon legs */
+.leg {
+    position: absolute;
+    top: 140px;
+    width: 17px;
+    height: 55px;
+    background: #3158a5;
+    border: 3px solid #333;
+    border-radius: 10px;
+    transform-origin: top center;
+}
+
+.left-leg {
+    left: 29px;
+    animation: leftLegWalk 0.5s infinite alternate;
+}
+
+.right-leg {
+    right: 29px;
+    animation: rightLegWalk 0.5s infinite alternate;
+}
+
+/* Walking animation */
+@keyframes leftArmWalk {
+    from { transform: rotate(25deg); }
+    to { transform: rotate(-25deg); }
+}
+
+@keyframes rightArmWalk {
+    from { transform: rotate(-25deg); }
+    to { transform: rotate(25deg); }
+}
+
+@keyframes leftLegWalk {
+    from { transform: rotate(-20deg); }
+    to { transform: rotate(20deg); }
+}
+
+@keyframes rightLegWalk {
+    from { transform: rotate(20deg); }
+    to { transform: rotate(-20deg); }
+} 

@@ -283,7 +283,8 @@ button {
     display: block;
 }
 .left-arm.wave {
-  animation: waveHand 0.5s ease-in-out 3;
+    animation: waveHand 0.5s ease-in-out 3 !important;
+    transform-origin: top center;
 }
 
 @keyframes waveHand {

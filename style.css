@@ -394,3 +394,14 @@ button {
 .speech {
     z-index: 2;
 }
+/* Keep cartoon arms and legs visible */
+
+.arm,
+.leg {
+    z-index: 3;
+}
+
+.head,
+.body {
+    z-index: 2;
+}

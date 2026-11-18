@@ -230,7 +230,6 @@ button {
 .eyes span:nth-child(2) {
     animation-delay: 0s;
 }
-}
 
 @keyframes cartoonBlinkNow {
     0%, 35%, 65%, 100% {
@@ -242,3 +241,44 @@ button {
     }
 }
 
+/* Talking mouth animation */
+
+.mouth.talking {
+    animation: mouthTalk 0.3s infinite alternate;
+}
+
+@keyframes mouthTalk {
+    from {
+        height: 4px;
+        width: 12px;
+        background: #b43d3d;
+        border-radius: 50%;
+    }
+
+    to {
+        height: 15px;
+        width: 18px;
+        background: #b43d3d;
+        border-radius: 50%;
+    }
+}
+
+/* Speech bubble */
+
+.speech {
+    display: none;
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    background: white;
+    color: #222;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    width: 180px;
+    text-align: center;
+}
+
+.speech.show {
+    display: block;
+}

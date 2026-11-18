@@ -21,7 +21,7 @@ jumpBtn.addEventListener("click", () => {
 const wavingArm = document.querySelector(".right-arm");
 waveBtn.addEventListener("click", () => {
     wavingArm.classList.add("wave");
-
+void wavingArm.offsetWidth;
     setTimeout(() => {
         wavingArm.classList.remove("wave");
     }, 1500);

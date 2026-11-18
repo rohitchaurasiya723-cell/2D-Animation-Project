@@ -18,8 +18,7 @@ jumpBtn.addEventListener("click", () => {
 });
 
 // Wave hand animation
-const wavingArm = document.querySelector(".right-arm");
-
+const wavingArm = document.querySelector(".left-arm");
 waveBtn.addEventListener("click", () => {
     wavingArm.classList.add("wave");
 

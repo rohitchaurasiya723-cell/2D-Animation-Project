@@ -27,6 +27,20 @@ const mouth = document.querySelector(".mouth");
 const speech = document.getElementById("speech");
 
 talkBtn.addEventListener("click", () => {
-    mouth.classList.toggle("talking");
-    speech.classList.toggle("show");
+    const message = speech.textContent;
+
+    const voice = new SpeechSynthesisUtterance(message);
+    voice.lang = "hi-IN";
+    voice.rate = 0.9;
+
+    window.speechSynthesis.cancel();
+
+    mouth.classList.add("talking");
+    speech.classList.add("show");
+
+    voice.onend = () => {
+        mouth.classList.remove("talking");
+    };
+
+    window.speechSynthesis.speak(voice);
 });

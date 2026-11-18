@@ -18,8 +18,14 @@ jumpBtn.addEventListener("click", () => {
 });
 
 // Wave hand animation
+const wavingArm = document.querySelector(".right-arm");
+
 waveBtn.addEventListener("click", () => {
-    alert("Hello! Welcome to my Cartoon World!");
+    wavingArm.classList.add("wave");
+
+    setTimeout(() => {
+        wavingArm.classList.remove("wave");
+    }, 1500);
 });
 // Talking animation
 const talkBtn = document.getElementById("talkBtn");

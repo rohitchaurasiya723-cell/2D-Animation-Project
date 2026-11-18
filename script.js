@@ -21,3 +21,12 @@ jumpBtn.addEventListener("click", () => {
 waveBtn.addEventListener("click", () => {
     alert("Hello! Welcome to my Cartoon World!");
 });
+// Talking animation
+const talkBtn = document.getElementById("talkBtn");
+const mouth = document.querySelector(".mouth");
+const speech = document.getElementById("speech");
+
+talkBtn.addEventListener("click", () => {
+    mouth.classList.toggle("talking");
+    speech.classList.toggle("show");
+});

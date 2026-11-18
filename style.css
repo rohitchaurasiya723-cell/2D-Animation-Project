@@ -143,7 +143,7 @@ button {
 
 .left-arm {
     left: 10px;
-    animation: none;
+    animation: leftArmWalk 0.5s infinite alternate;
 }
 
 .right-arm {
@@ -175,23 +175,23 @@ button {
 
 /* Walking animation */
 @keyframes leftArmWalk {
-    from { transform: rotate(25deg); }
-    to { transform: rotate(-25deg); }
+    from { transform: rotate(18deg); }
+    to { transform: rotate(-18deg); }
 }
 
 @keyframes rightArmWalk {
-    from { transform: rotate(-25deg); }
-    to { transform: rotate(25deg); }
+    from { transform: rotate(-18deg); }
+    to { transform: rotate(18deg); }
 }
 
 @keyframes leftLegWalk {
-    from { transform: rotate(-20deg); }
-    to { transform: rotate(20deg); }
+    from { transform: rotate(-15deg); }
+    to { transform: rotate(15deg); }
 }
 
 @keyframes rightLegWalk {
-    from { transform: rotate(20deg); }
-    to { transform: rotate(-20deg); }
+    from { transform: rotate(15deg); }
+    to { transform: rotate(-15deg); }
 } 
 @keyframes moveCharacter {
     from {

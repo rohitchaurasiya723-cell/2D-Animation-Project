@@ -203,6 +203,13 @@ button {
 }
 /* Make character move across the screen */
 .character {
+    position: absolute;
+    bottom: 65px;
+    left: 10%;
+    width: 100px;
+    height: 200px;
+    transform: translateX(-50%);
+
     animation:
         bob 2s infinite ease-in-out,
         moveCharacter 5s linear infinite alternate;
